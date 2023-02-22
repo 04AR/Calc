@@ -1,3 +1,3 @@
 # Calc
 
-Calculator for Symbolic mathematical calculations 🧾 , Caculus 📈, matrix 
+Calculator for Symbolic mathematical calculations 🧾 , Caculus 📈, matrix ❎ etc 😀.
