@@ -24,11 +24,17 @@ body{
     box-shadow: 0 -4px 8px 0 rgba(83, 83, 83, 0.19), 0 6px 20px 0 rgba(226, 226, 226, 0.19); 
 }
 
-.solution{
+.Container_head{
+  background-color: rgba(106, 106, 106, 0.39); 
+  border-radius: 0.5em 0.5em 0em 0em;
+  /* float: right; */
+}
+
+.Container{
     padding-top: 1em;
     padding-left: 3em;
     border-radius: 0.5em;
-    background-color: #ffffffb6;
+    background-color: #f3f2f299;
     box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.19);
 }
 
@@ -37,6 +43,10 @@ body{
   width: 30em;
   box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.19);
   font-family: 'Courier New', Monospace;
+}
+
+.Container_head_butt{
+  font-size: 10px;
 }
 
 /* CSS */
@@ -52,7 +62,7 @@ button {
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
   box-sizing: border-box;
-  color: #41403e;
+  color: #000000;
   cursor: pointer;
   display: inline-block;
   font-family: 'Courier New', Monospace;
