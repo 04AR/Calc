@@ -25,19 +25,20 @@ body{
 }
 
 .Container_head{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   background-color: rgb(79, 79, 79); 
   border-radius: 0.5em 0.5em 0em 0em;
-  color: #fff;
-  padding: 0;
-  margin: 0;
+  
+  display: flex;
+  justify-content: right; 
 }
 
 .Container{
     padding-top: 1em;
     padding-left: 3em;
     border-radius: 0.5em;
-    background-color: #f3f2f299;
-    box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.19);
+    background-color: #f3f2f2dd;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .Equation{
@@ -47,7 +48,20 @@ body{
   font-family: 'Courier New', Monospace;
 }
 
-button {
+.C_head_button{
+  font-size: medium;
+  font-weight: bolder;
+  border-color: #ffffff00;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  width: 4em;
+}
+
+.C_head_button::after{
+  background-color: rgb(45, 44, 43);
+}
+
+.paper_button {
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -77,11 +91,11 @@ button {
   touch-action: manipulation;
 }
 
-button:hover {
+.paper_button:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
-button:active{
+.paper_button:active{
   background-color: #9a9a9a32;
 }
