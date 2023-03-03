@@ -8,25 +8,29 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="node_modules/mathjs/lib/browser/math.js" type="text/javascript"></script>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
     <title>🧮 Calculator</title>
 </head>
 <body>
+    <script src="main.js"></script>
+     
     <h1 style="text-decoration-line: underline;">
         🧮Calculator🧮
     </h1>
 
     <div>
-        <input type="search" name="input" class="Equation" placeholder="Enter Equation.......">
-        <button class="paper_button"> Solve! </button>
+        <input name="input" class="Equation" placeholder="Enter Equation.......">
+        <button class="paper_button" onclick="parser()"> Solve! </button>
     </div>
 
 
     <div class = "" style="height: 100%; width: 80%;">
-        <h1 style="text-decoration-line: underline;">
+        <h2 style="text-decoration-line: underline;">
             🧾Expressions:
-        </h1>
+        </h2>
 
         <div class = "Container_head">
             <button class="C_head_button" >⭐</button>
@@ -36,7 +40,7 @@
             <button class="C_head_button" >. . .</button>
         </div>
 
-        <div class="Container" style="display: flex;justify-content: space-around; border-radius: 0em 0em 0.5em 0.5em;" >
+        <div class="Container" style="display: flex;justify-content: space-around; border-radius: 0em 0em 0.5em 0.5em;height: 5em;" >
             <button class="paper_button">$$\int_{\fbox{}}^{\fbox{}}$$</button>
             <button class="paper_button">$$\lim$$</button>
             <button class="paper_button">$$\partial$$</button>
@@ -44,12 +48,11 @@
             <button class="paper_button">$$\iint$$</button>
             <button class="paper_button">$$\sin{\theta}$$</button>
             <button class="paper_button">$$\frac{x}{y}$$</button>
-
         </div>
 
-        <h1 style="text-decoration-line: underline;">
+        <h2 style="text-decoration-line: underline;">
             📝Solution:
-        </h1>
+        </h2>
         <div class = "Container">
             <p>
                 When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
@@ -61,6 +64,7 @@
             </p>
 
             <p>
+            
             </p>
 
             <p>
@@ -76,9 +80,9 @@
     </div>
 
     <div class="footer">
-        <h2>
+        <h3>
             footer 🦶 👟
-        </h2>
+        </h3>
     </div>
     
 </body>

@@ -1,9 +1,6 @@
-import {
-    atan2, chain, derivative, e, evaluate, log, pi, pow, round, sqrt
-  } from 'mathjs'
-
-function parser(params) {
-
+function parser() {
+    var eq = document.querySelector(".Equation").value;
+    alert(math.evaluate(eq));
 }
 
 class Node{
