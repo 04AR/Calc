@@ -1,35 +1,15 @@
-function parser() {
+// math.import(require('mathjs-simple-integral'));
+function eval() {
     var eq = document.querySelector(".Equation").value;
     alert(math.evaluate(eq));
 }
 
-class Node{
-    constructor(value){
-        this.value = value;
-        this.parent = null;
-        this.child = null;
-    }
+function deriv() {
+    var eq = document.querySelector(".Equation").value;
+    alert(math.derivative(eq,'x'));
 }
 
-class Tree{
-    constructor(){
-        this.head = null;
-        this.roots = null;
-        this.height = 0;
-    }
-    find(val){
-
-    }
-
-    insert(val){
-
-    }
-
-    remove(val){
-
-    }
-
-    remove(index){
-
-    }
+function inte() {
+    var eq = document.querySelector(".Equation").value;
+    alert(math.integral(eq,'x'));
 }
